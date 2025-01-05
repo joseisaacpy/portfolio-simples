@@ -55,6 +55,11 @@ nav ul li a {
   color: var(--bg-white);
   text-decoration: none;
   font-weight: bold;
+
+  transition: all 0.5s ease-in-out;
+}
+nav ul li a:hover {
+  color: var(--bg-blue);
 }
 
 /* main */
@@ -64,7 +69,7 @@ nav ul li a {
 /* section */
 section {
   /* "retira" espaço do header que cobre a section */
-  scroll-margin: 70px;
+  /* scroll-margin: 60px; */
   height: 100dvh;
   width: 100%;
 }
@@ -88,7 +93,7 @@ section#home {
   padding-left: 4%;
 }
 section#home h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--bg-white);
 }
 section#home strong {
@@ -122,11 +127,11 @@ section#sobre {
 }
 
 section#sobre div {
-  margin: 0 4%;
+  margin: 0 2%;
 }
 section#sobre img {
   margin: 0 2% 0;
-  width: 50%;
+  width: 45%;
   border-radius: var(--radius);
 }
 
@@ -156,7 +161,7 @@ section#projetos .lista-projetos {
   /* gap: 10px; */
 }
 section#projetos .lista-projetos img {
-  width: 22%;
+  width: 25.5%;
   opacity: 0.8;
   margin: 5px;
   border-radius: var(--radius);
@@ -178,4 +183,41 @@ footer {
 footer p {
   font-weight: bold;
   color: var(--bg-white);
+}
+footer p a {
+  color: var(--bg-white);
+  text-decoration: none;
+}
+footer p a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 300px) and (max-width: 760px) {
+  html {
+    font-size: 14px;
+  }
+  section#sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  section#sobre h2 {
+    text-align: center;
+  }
+
+  section#sobre div {
+    margin: 0 2%;
+    text-align: center;
+  }
+
+  section#sobre img {
+    margin: 10px 0 0;
+    width: 64%;
+  }
+
+  section#projetos .lista-projetos img {
+    width: 30%;
+  }
 }
