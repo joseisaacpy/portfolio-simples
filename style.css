@@ -104,6 +104,13 @@ section#home button {
   border-radius: var(--radius);
   font-size: 1rem;
   font-weight: bold;
+
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+section#home button:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 15px var(--bg-blue);
 }
 
 /* section sobre */
@@ -115,10 +122,60 @@ section#sobre {
 }
 
 section#sobre div {
-  margin: 0 0 0 2%;
+  margin: 0 4%;
 }
 section#sobre img {
   margin: 0 2% 0;
   width: 50%;
   border-radius: var(--radius);
+}
+
+/* section projetos */
+section#projetos {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+    url(https://images.pexels.com/photos/5473892/pexels-photo-5473892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
+      no-repeat center/cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+section#projetos h2 {
+  color: var(--bg-white);
+}
+section#projetos p {
+  font-style: italic;
+  color: var(--bg-white);
+  margin-bottom: 5px;
+}
+section#projetos .lista-projetos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 10px; */
+}
+section#projetos .lista-projetos img {
+  width: 22%;
+  opacity: 0.8;
+  margin: 5px;
+  border-radius: var(--radius);
+  transition: all 0.5s ease-in-out;
+}
+section#projetos .lista-projetos img:hover {
+  opacity: 1;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  background-color: var(--bg-black);
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  font-weight: bold;
+  color: var(--bg-white);
 }
