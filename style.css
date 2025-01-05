@@ -194,9 +194,17 @@ footer p a:hover {
 }
 
 @media (min-width: 300px) and (max-width: 760px) {
+  /* diminui fonte */
   html {
     font-size: 14px;
   }
+
+  /* links do nav centralizados */
+  header {
+    justify-content: center;
+  }
+
+  /* seção sobre em coluna */
   section#sobre {
     display: flex;
     align-items: center;
@@ -204,20 +212,24 @@ footer p a:hover {
     flex-direction: column;
   }
 
+  /* h2 no centro */
   section#sobre h2 {
     text-align: center;
   }
 
+  /* div com texto centralizada  */
   section#sobre div {
     margin: 0 2%;
     text-align: center;
   }
 
+  /* largura da img ajustada  */
   section#sobre img {
     margin: 10px 0 0;
     width: 64%;
   }
 
+  /* largura da img ajustada  */
   section#projetos .lista-projetos img {
     width: 30%;
   }
