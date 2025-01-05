@@ -137,7 +137,7 @@ section#sobre img {
 
 /* section projetos */
 section#projetos {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(https://images.pexels.com/photos/5473892/pexels-photo-5473892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
       no-repeat center/cover;
 
@@ -162,10 +162,11 @@ section#projetos .lista-projetos {
 }
 section#projetos .lista-projetos img {
   width: 25.5%;
-  opacity: 0.8;
+  opacity: 0.6;
   margin: 5px;
   border-radius: var(--radius);
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 section#projetos .lista-projetos img:hover {
   opacity: 1;
